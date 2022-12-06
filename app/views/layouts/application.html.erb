@@ -10,9 +10,11 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
-      <%= render 'searches/serach', book: @book, user: @user %>
       <main>
         <p id="notice"><%= notice %></p>
+        <div class="d-flex justify-content-center mb-2">
+          <%= render 'searches/serach', book: @book, user: @user %>
+        </div>
         <%= yield %>
       </main>
     <%= render 'layouts/footer' %>
